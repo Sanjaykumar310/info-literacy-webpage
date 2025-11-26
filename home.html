@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>INLS161-002 Fall 2014 Information Tools</title>
+</head>
+
+<body>
+
+    <h2>INLS161-002 Fall 2014 Information Tools</h2>
+    <hr>
+
+    <!-- Navigation Buttons -->
+    <button onclick="window.location.href='index.html';">HOME</button>
+
+    <details style="display: inline-block;">
+        <summary>syllabus ↓</summary>
+        <p>about INLS461-001</p>
+        <p>readings</p>
+        <p>lab info</p>
+        <p>evaluation</p>
+        <p>grading</p>
+        <p>Honor Code</p>
+        <p>diversity</p>
+    </details>
+
+    <details style="display: inline-block;">
+        <summary>tasks ↓</summary>
+        <p>task 1</p>
+        <p>task 2</p>
+        <p>task 3</p>
+    </details>
+
+    <br><br>
+
+    <!-- FLEXBOX LAYOUT ensures Right side goes to RIGHT -->
+    <div style="display: flex; justify-content: space-between; align-items: flex-start; width: 100%;">
+
+
+        <!-- LEFT SIDE (Schedule) -->
+        <div style="width: 60%;">
+
+            <h3 style="color: red;">Schedule</h3>
+
+            <table border="1" style="border-collapse: collapse; width: 100%;">
+                <tr style="background-color: #4a7a9c; color: white;">
+                    <th>session | date | day</th>
+                    <th>basics sessions</th>
+                    <th>to do</th>
+                </tr>
+
+                <tr>
+                    <td>01 | 08/19/14 | Tue</td>
+                    <td><a href="#">INTRO</a></td>
+                    <td><a href="#">Newsletter</a></td>
+                </tr>
+
+                <tr>
+                    <td>02 | 08/21/14 | Thu</td>
+                    <td><a href="#">Server</a></td>
+                    <td><a href="#">FTP Tool</a></td>
+                </tr>
+
+                <tr>
+                    <td>03 | 08/21/14 | Fri</td>
+                    <td><a href="#">Client</a></td>
+                    <td><a href="#">protected directory/UNIX Tutorial</a></td>
+                </tr>
+
+                <tr>
+                    <td>04 | 08/28/14 | Thu</td>
+                    <td><a href="#">Network</a></td>
+                    <td><a href="#">traceroute</a></td>
+                </tr>
+
+            </table>
+
+        </div>
+
+
+        <!-- RIGHT SIDE (Resources) -->
+        <div style="width: 30%; text-align: left;">
+
+            <h3 style="color: red;">Resources</h3>
+            <hr>
+
+            <p><b>School Information</b></p>
+
+            <p><a href="#">SILC</a></p>
+            <hr>
+
+            <p><a href="#">UNC</a></p>
+            <hr>
+
+            <p><a href="#">IT Help</a></p>
+            <hr>
+
+            <p><a href="#">Security</a></p>
+            <hr>
+
+            <h2><b>EXTERNAL LINKS</b></h2>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
