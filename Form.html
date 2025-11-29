@@ -10,12 +10,24 @@
     </body>
 
     <!-- FORM TAG -->
+    <style>
 
+        form{
+            background-color: black;
+            color: white;
+            margin: auto;
+            border-style:dashed ;
+            border-color: yellow;
+            border-radius: 20px 0px 20px 0px ;
+        }
+    </style>
+        <body> 
+        
     <fieldset>
         <legend style="color: red;">FULL YOUR DETAILS</legend>
 
             <form action="index.html">
-                <label>NAME</label>
+                <label >NAME</label>
                 <input type="text" placeholder="FIRSTNAME">
                 <br><br>
                 <label>NAME</label>
@@ -35,21 +47,26 @@
                         <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx">
                         <button type="submit">Submit</button>
                         <label for="cv">Upload Your CV:</label>
-                    </form>
+                    
                     <br><br>
-                    <a rel="styleshee>
+                   
 
                     
-                    <label style="color: red;">GENDER</label>
-                    <br><br>
-                    <label>MALE</label>
-                    <input type="radio" name="gender">
-                    <input type="radio" name="gender">
-                    <label>FEMALE</label>
-                    <input type="radio" name="gender">
-                    <label>OTHERS</label>
-                    <br><br>
-                    
+                 <label style="color: red;">GENDER</label>
+                <br><br>
+
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">MALE</label>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">FEMALE</label>
+
+                <input type="radio" id="others" name="gender" value="others">
+                <label for="others">OTHERS</label>
+
+                <br><br>
+
+
                     <!-- chekbox tag -->
                     
                     
