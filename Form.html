@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>
-            hey buddy
+            Hey Buddy
         </title>
     </head>
     <body>
@@ -12,10 +12,11 @@
     <!-- FORM TAG -->
 
     <fieldset>
-        <legend>FULL YOUR DETAILS</legend>
+        <legend style="color: red;">FULL YOUR DETAILS</legend>
 
             <form action="index.html">
                 <label>NAME</label>
+                <input type="text" placeholder="FIRSTNAME">
                 <br><br>
                 <label>NAME</label>
                 <input type="text" placeholder="LASTNAME" required>
@@ -29,8 +30,17 @@
                     <label>AGE</label>
                     <input type="number">
                     <br><br>
+
+                    <form action="/upload" method="post" enctype="multipart/form-data">
+                        <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx">
+                        <button type="submit">Submit</button>
+                        <label for="cv">Upload Your CV:</label>
+                    </form>
+                    <br><br>
+                    <a rel="styleshee>
+
                     
-                    <label>GENDER</label>
+                    <label style="color: red;">GENDER</label>
                     <br><br>
                     <label>MALE</label>
                     <input type="radio" name="gender">
