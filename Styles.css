@@ -1,42 +1,58 @@
-p{
-   font-family:cursive;
+/* Stylesheet for index.html */
+
+/* Paragraph styling */
+p {
+   font-family: cursive;
    color: black;
    text-decoration-color: white;
-   background-color: rgb(254, 186, 1);
-    text-shadow: 5px 51px 5px gray ;
-
+   background-color: rgb(254, 186, 1); /* Golden yellow background */
+   text-shadow: 5px 51px 5px gray; /* Adds shadow effect to text */
 }
 
-table{
-
-    background-color: lightgray; ;
+/* Table styling */
+table {
+   background-color: lightgray; /* Light gray background for all tables */
 }
 
-body{
-    color: blue ;
+/* Body styling */
+body {
+   color: blue; /* Default text color for the entire page */
+   background-image: url("images.jpg"); /* Background image (ensure images.jpg exists) */
 }
-body{
-
-    background-image: url("images.jpg");
-}
+/* ID selector for "off" — solid border with color gradient effect */
 #off {
-    border-style:  solid;
-    border-width: 5px ;
-    border-color: whitesmoke red yellow white;
-    border-radius: 5px 0px 5px 0px ;
+   border-style: solid;
+   border-width: 5px;
+   border-color: whitesmoke red yellow white; /* Multi-color border */
+   border-radius: 5px 0px 5px 0px; /* Rounded corners (top-left and bottom-right) */
 }
-#info{
-    border: 2px solid white;
-    border-radius: 0px 10px 0px 10px ;
+/* ID selector for "info" — thin white border with alternating rounded corners */
+#info {
+   border: 2px solid white;
+   border-radius: 0px 10px 0px 10px; /* Rounded corners (top-right and bottom-left) */
 }
-#fall{
-    margin-left:  500px;  ;
+/* ID selector for "fall" — positions element 500px from left edge */
+#fall {
+   margin-left: 500px; /* Large left margin for horizontal positioning */
 }
-.hi{
-    margin-left: 500px;
-    margin-right: 500px;
-    border-style: solid ;
-    border-color:  aqua ;
-    border-radius: 10px 0px 10px 0px ;
-    padding-left: 50px ;
+/* Class selector "hi" — centered box with aqua border and padding */
+.hi {
+   margin-left: 500px; /* Left margin for horizontal positioning */
+   margin-right: 500px; /* Right margin creates centered effect */
+   border-style: solid;
+   border-color: aqua; /* Bright cyan/aqua border */
+   border-radius: 10px 0px 10px 0px; /* Rounded corners (top-left and bottom-left) */
+   padding-left: 50px; /* Internal padding on the left */
 }
+
+/* Ended Stylesheet for index.html */
+
+/* Stylesheet for form.html */
+
+
+
+
+/* Ended Stylesheet for form.html */
+
+
+

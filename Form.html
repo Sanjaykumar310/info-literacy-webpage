@@ -1,84 +1,84 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-            Hey Buddy
-        </title>
-    </head>
-    <body>
-        <h3 style="color: gray;">Hey Buddy</h3>
-    </body>
+<head>
+    <title>Hey Buddy</title>
 
-    <!-- FORM TAG -->
     <style>
+        /* Full border for entire form */
+        .main-form {
+            
+             background-color:rgb(254, 186, 1);
+            /* To make form readable */
+        }
 
-        form{
-            background-color: black;
-            color: white;
-            margin: auto;
-            border-style:dashed ;
-            border-color: yellow;
-            border-radius: 20px 0px 20px 0px ;
+        body {
+            background-color: rgb(254, 186, 1);
+            font-family: Arial;
         }
     </style>
-        <body> 
+</head>
+
+<body>
+<center>
+<h3>Hey Buddy</h3>
+</center>
+<form action="index.html" enctype="multipart/form-data">
+
+    
+        <center>
+        <label>FULL YOUR DETAILS</label>
+        <br><br>
+        </center>
+
+        <label>NAME</label>
+        <input type="text" placeholder="FIRSTNAME">
+        <br><br>
+
+        <label>NAME</label>
+        <input type="text" placeholder="LASTNAME" required>
+        <br><br>
+
+        <label>PASSWORD</label>
+        <input type="password" required>
+        <br><br>
+
+        <label>DOB</label>
+        <input type="date">
+        <br><br>
+
+        <label>AGE</label>
+        <input type="number">
+        <br><br>
+
+        <label>GENDER</label>
+        <br><br>
+
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">MALE</label>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">FEMALE</label>
+
+        <input type="radio" id="others" name="gender" value="others">
+        <label for="others">OTHERS</label>
+        <br><br>
+
+        <input type="checkbox">
+        <label>I agree to the terms and conditions</label>
+        <br><br>
+
+        <label for="cv">Upload Your CV:</label>
+        <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx">
+        <br><br>
+
+        <button type="submit">Submit</button>
         
-    <fieldset>
-        <legend style="color: red;">FULL YOUR DETAILS</legend>
 
-            <form action="index.html">
-                <label >NAME</label>
-                <input type="text" placeholder="FIRSTNAME">
-                <br><br>
-                <label>NAME</label>
-                <input type="text" placeholder="LASTNAME" required>
-                <br><br>
-                <label>PASSWORD</label>
-                <input type="password" required>
-                <br><br>
-                <label>DOB</label>
-                <INPUT TYPE="date">
-                    <br><br>
-                    <label>AGE</label>
-                    <input type="number">
-                    <br><br>
+    
 
-                    <form action="/upload" method="post" enctype="multipart/form-data">
-                        <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx">
-                        <button type="submit">Submit</button>
-                        <label for="cv">Upload Your CV:</label>
-                    
-                    <br><br>
-                   
+</form>
+<br><br>
+    <button onclick="window.location.href='index.html';"> Home </button>
 
-                    
-                 <label style="color: red;">GENDER</label>
-                <br><br>
-
-                <input type="radio" id="male" name="gender" value="male">
-                <label for="male">MALE</label>
-
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female">FEMALE</label>
-
-                <input type="radio" id="others" name="gender" value="others">
-                <label for="others">OTHERS</label>
-
-                <br><br>
-
-
-                    <!-- chekbox tag -->
-                    
-                    
-                    <input type="checkbox">
-                    <label> I agree to the terms and conditions </label>
-                    <br><br>
-                    
-                    <input type="submit">
-                    
-                    
-                    
-                </form>
-        </fieldset>
-            
+</body>
 </html>
