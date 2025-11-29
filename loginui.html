@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+
+    <style>
+        body {
+            background-color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Center the form container */
+        .form-box {
+            width: 400px;
+            margin: 50px auto;        /* Centers the box */
+            padding: 30px;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            text-align: left;         /* Align inside content properly */
+        }
+
+        .form-box h2 {
+            text-align: center;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, button {
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="number"],
+        input[type="file"] {
+            width: 100%;
+            padding: 8px;
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+            padding: 8px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-box">
+
+        <h2>FULL YOUR DETAILS</h2>
+
+        <form action="index.html" enctype="multipart/form-data">
+
+            <label>NAME:</label>
+            <input type="text" placeholder="FIRSTNAME">
+
+            <label>Gmail ID:</label>
+            <input type="text" placeholder="EMAIL" required>
+
+            <label>PASSWORD:</label>
+            <input type="password" required>
+
+            <label>CONFIRM PASSWORD:</label>
+            <input type="password" required>
+
+            <label>AGE:</label>
+            <input type="number">
+
+            <label>GENDER:</label><br>
+            <input type="radio" name="gender" value="male"> MALE
+            <input type="radio" name="gender" value="female"> FEMALE
+            <input type="radio" name="gender" value="others"> OTHERS
+            <br><br>
+
+            <input type="checkbox">
+            <label>I agree to the terms and conditions</label>
+
+            <br><br>
+
+            <label>Upload Your CV:</label>
+            <input type="file" accept=".pdf,.doc,.docx">
+
+            <button type="submit">Submit</button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
